@@ -1,0 +1,119 @@
+/* Define color variables to maintain consistency and ease of change */
+:root {
+    --sidebar-bg-color: #0D1117; /* Dark background for the sidebar */
+    --sidebar-text-color: #C9D1D9; /* Text color for the sidebar */
+    --sidebar-text-active-color: #58A6FF; /* Active text color for sidebar items */
+    --button-bg-color: #21262D; /* Button background color */
+    --button-text-color: #FFFFFF; /* Button text color */
+    --upgrade-button-color: #1F6FEB; /* 'Upgrade to Pro' button color */
+  }
+  
+  /* Base styles for the sidebar */
+  .sidebar {
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-text-color);
+    width: 250px; /* Fixed width for the sidebar */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  /* Sidebar header styles */
+  .sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: 100%; /* Logo width */
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  
+  .new-chat-button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .new-chat-button:hover{
+    background-color: var(--sidebar-text-active-color);
+  }
+  
+  .new-chat-button i {
+    margin-right: 8px;
+  }
+  
+  .conversation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .conversation-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+  }
+  
+  .conversation-list li:hover {
+    background: #222;
+  }
+  
+  .sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .upgrade-button {
+    background-color: var(--upgrade-button-color);
+    width: 10%;
+    color: var(--button-text-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    bottom: 1rem;
+    left: 3rem;
+    right: 1rem;
+  }
+  
+  .upgrade-button:hover {
+    background-color: darken(var(--upgrade-button-color), 10%);
+  }
+  .sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav-item {
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  
+  .sidebar-nav-item:hover,
+  .sidebar-nav-item.active {
+    color: var(--sidebar-text-active-color);
+  }
+

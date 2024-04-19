@@ -1,0 +1,4 @@
+groq
+requests
+yfinance
+flask_cors
